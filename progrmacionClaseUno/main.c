@@ -4,35 +4,58 @@
 //
 int main()
 {
-    int dinero; // valor
-    char tipo; //p,l,d,b
-    int dolarMaximo = 0;
-    char flag = 0;
-    char seguir = 0;
+
+    int dinero;
+    float pesoPromedio;
+    int pesoContador = 0;
+    int pesoAcumulador = 0;
+    int elPrimerDolar = 0;
+    char tipo;
+    char seguir = 's';
+    int dineroDolarPrecioMayor = 0;
 
 
     do
     {
-        printf("Coloque el dinero ");
+        printf("Coloque cantidad del dinero ");
         scanf("%d", &dinero);
 
         printf("Coloque tipo de divisa ");
         fflush(stdin);
         scanf("%c", &tipo);
 
-        if (dolarMaximo > dinero && flag == 0 || dinero == 's')
-        {
-            dolarMaximo = dinero;
-            flag = 1;
+       if(tipo == 'd')
+       {
+            if (elPrimerDolar == 0)
+            {
+                dineroDolarPrecioMayor = dinero;
+                elPrimerDolar = 1;
+            }
+            else if (dinero > dineroDolarPrecioMayor)
+            {
+                dineroDolarPrecioMayor = dinero;
+            }
         }
 
-        printf("Desea seguir?");
+        if (tipo == 'p')
+        {
+            pesoAcumulador += dinero;
+            pesoContador++;
+        }
+
+        printf("Desea continuar? ");
         fflush(stdin);
         scanf("%c", &seguir);
+
     }
     while (seguir == 's');
 
-    printf("El dolar maximo es de %d \n", dolarMaximo);
+    if(pesoContador != 0)
+    {
+        pesoPromedio = (float)pesoAcumulador / (float)pesoContador;
+    }
 
+    printf("El dolar más caro es %d: \n", dineroDolarPrecioMayor);
+    printf("El promedio de los pesos %.2f: ", pesoPromedio);
     return 0;
 }
