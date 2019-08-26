@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1566825245 source:d:\subeldia\ejemplodegita\progrmacionclaseuno\main.c
+	<stdio.h>
+	<stdlib.h>
+
