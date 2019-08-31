@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+///int devuelve
+///void muestra
 ///Prototipo
 int mostarMenu(int numeroA,int numeroB);
 int menu(int numeroA, int numeroB);
@@ -30,26 +31,27 @@ int mostarMenu(int numeroA,int numeroB)
         switch (opcion)
         {
             case 1:
-                printf("O 1\n");
+
+                printf("Opción 1 Ingresar 1er operando (A = x)\n");
                 break;
             case 2:
-                printf("O 2\n");
+                printf("Opción 2 Ingresar 2do operando (B = y)\n");
                 break;
             case 3:
-                printf("O 3\n");
+                printf("Opción 3 Calcular todas las operaciones \n");
                 break;
             case 4:
-                printf("O 4\n");
+                printf("Opción 4 Informar resultados \n");
                 break;
             case 5:
-                printf("O 5 Salir \n");
-                printf(" S E G U R E QUIERE Salir?\n");
+                printf("Opción 5 Salir \n");
+                printf("QUIERE Salir?\n");
                 fflush(stdin);
                 scanf("%c", &salir);
                 //salir = getch();
                 break;
             default:
-                printf("O invalidE\n");
+                printf("O invalido\n");
         }
         system("pause");
     }
@@ -68,10 +70,113 @@ int menu(int numeroA, int numeroB)
         printf("3) \n");
         printf("4) \n");
         printf("5) \n");
-        printf("Decidase PUTE\n");
+        //printf("elija \n");
         scanf("%d", &opcion);
         //opcion = getch(); SOLO LETRAS
 
+
         return opcion;
 }
+/*
 
+int sumar(int numeroUno, int numeroDos);
+int calcular(int numeroUno, int numeroDos, int operacion);
+///1 suma 2 resta 3 ,mult, 4 divide, 5 factorea
+int main()
+{
+    if (calcular (3,3,5))
+    {
+        printf("Bien");
+    }
+    else
+    {
+        printf("Mal");
+    }
+
+        if (calcular (8,0,4))
+    {
+        printf("Bien");
+    }
+    else
+    {
+        printf("Mal");
+    }
+
+}*/
+
+///
+void mostrarSuma();
+void menu(int);
+int sumar(int numeroUno, int numeroDos);
+int calcular(int numeroUno, int numeroDos, int operacion);
+///1 suma 2 resta 3 ,mult, 4 divide, 5 factorea
+
+int main()
+{
+    if (calcular (3,3,5))
+    {
+        printf("Bien");
+    }
+    else
+    {
+        printf("Mal");
+    }
+
+        if (calcular (8,0,4))
+    {
+        printf("Bien");
+    }
+    else
+    {
+        printf("Mal");
+    }
+}
+/*
+void mostrarSuma()
+{
+    int numeroUno;
+    int numeroDos;
+
+    printf("Coloque el primer numero");
+    scanf("%d", &numeroUno);
+    printf("Coloque el segundo numero");
+    scanf("%d", &numeroDos);
+}
+*/
+/*
+void menu()
+{
+    int opcion;
+
+    printf("Coloque la opcion que desea realizar \1 suma 2 resta 3 ,mult, 4 divide, 5 factor");
+    scanf("d", &opcion);
+}
+*/
+
+int calcular(int numeroUno, int numeroDos, int operacion)
+{
+    int total;
+
+   // opcion = menu;
+
+    switch (operacion)
+    {
+        case 1:
+            total = numeroUno + numeroDos;
+            break;
+        case 2:
+            total = numeroUno - numeroDos;
+            break;
+        case 3:
+            total = numeroUno * numeroDos;
+            break;
+        case 4:
+            total = numeroUno / numeroDos;
+            break;
+        default:
+            printf("Elija otra opcoin");
+    }
+    system("pause");
+    //operacion = total;
+
+}*/
