@@ -98,7 +98,15 @@ void restar(int numeroA,int numeroB)
 }
 void dividir(int numeroA,int numeroB)
 {
-    printf("c) El resultado de %d / %d es: %d\n", numeroA, numeroB,(numeroA / numeroB));
+    if (numeroB != 0)
+    {
+        printf("c) El resultado de %d / %d es: %d\n", numeroA, numeroB,(numeroA / numeroB));
+    }
+    else
+    {
+        printf("ERROR\n");
+    }
+
 }
 void multiplicar(int numeroA,int numeroB)
 {
