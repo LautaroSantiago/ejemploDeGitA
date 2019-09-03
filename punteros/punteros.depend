@@ -1,5 +1,11 @@
 # depslib dependency file v1.0
-1567436284 source:c:\users\alumno\desktop\punteros\main.c
+1567519228 source:c:\users\alumno\desktop\punteros\punteros\inputs.c
+	"INPUTS.h"
+
+1567519309 c:\users\alumno\desktop\punteros\punteros\inputs.h
+
+1567519170 source:c:\users\alumno\desktop\punteros\punteros\main.c
 	<stdio.h>
 	<stdlib.h>
+	"INPUTS.h"
 
