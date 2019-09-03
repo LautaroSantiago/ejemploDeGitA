@@ -5,7 +5,7 @@
 
 #define T 10//donde se encuentre T, lo cambia por 5
 //int const T = 10; //ocupa memoria
-
+//averiguar swap cambio de valores entre a y b con c; c=a, a=b, b=c
 int main()
 {
 
@@ -128,4 +128,40 @@ int main()
     return 0;
 }
 
+
+/*
+metodo de burbujeo
+
+main.c
+ordenarVector(vectorDeNumeros, T);
+
+agregar al vectore.c
+
+void ordenarVector(int vector[], int tam)
+
+
+vector [i]
+{
+//for dentro de otro es anidado
+int i;
+int j;
+int aux;
+
+    for ( i = 0; i < tam-1; i++)
+    {
+        for (j +1; j<tam;j++)
+        {
+            if(vector[i]>vector[j])//condicion con criterio de evaluacion
+            {
+                aux = vector [i]= vector[j]; // paso vector [i]
+                aux = vector [j]= aux;
+            }
+        }
+    }
+
+}
+
+
+
+*/
 
