@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1568602492 source:c:\users\user\desktop\int\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Int.h"
+
+1568605334 source:c:\users\user\desktop\int\int.c
+	<stdio.h>
+	<stdlib.h>
+	"Int.h"
+
+1568605362 c:\users\user\desktop\int\int.h
+
