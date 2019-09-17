@@ -1,2 +1,2 @@
 # ejemploDeGitA
-GetElementByid
+GetElementById
