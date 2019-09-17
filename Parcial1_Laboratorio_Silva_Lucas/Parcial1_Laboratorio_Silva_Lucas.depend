@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1557240483 source:d:\parcial1_laboratorio_silva_lucas\main.c
+	<stdio.h>
+	<stdlib.h>
+	"PedirDatos.h"
+	"Peliculas.h"
+
+1556643242 source:d:\parcial1_laboratorio_silva_lucas\pedirdatos.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+
+1557242429 source:d:\parcial1_laboratorio_silva_lucas\peliculas.c
+	"Peliculas.h"
+	"PedirDatos.h"
+	<string.h>
+	<stdlib.h>
+
+1556641145 d:\parcial1_laboratorio_silva_lucas\pedirdatos.h
+
+1557239533 d:\parcial1_laboratorio_silva_lucas\peliculas.h
+	<stdio.h>
+
