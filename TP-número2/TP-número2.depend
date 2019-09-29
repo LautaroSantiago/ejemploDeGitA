@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1569779307 source:c:\users\monkey\desktop\tp-número2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"utn.h"
+
+1569779251 c:\users\monkey\desktop\tp-número2\utn.h
+
