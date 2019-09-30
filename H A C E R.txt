@@ -1,0 +1,4 @@
+Materia estructura;
+ALumno-Materia(fisica);
+Materia-ALumno;
+Cuantos alumnos cursa fisica viven en "Quilmes"; 
