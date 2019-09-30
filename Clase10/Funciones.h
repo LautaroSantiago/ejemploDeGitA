@@ -1,8 +1,8 @@
-#ifndef FUNCIONES_H_INCLUDED
-#define FUNCIONES_H_INCLUDED
+//#ifndef FUNCIONES_H_INCLUDED
+//#define FUNCIONES_H_INCLUDED
 typedef struct
 {
-    int estaVacio;
+int estaVacio;
     int legajo;
     int nota;
     char nombre[51];
@@ -15,8 +15,9 @@ typedef struct
 
 }eLocalidad;
 
+
 int getInt(char mensaje[]);
-int initEmployees(Employee* list, int len);
+int initEmployees(Employee lista[], int len);
 void ordenarInsercion(eAlumno unArray[],int tam);
 void harcodearAlumnos(eAlumno unArray[]);
 int buscarSoloEstado(eAlumno unArray[],int tam,int estado);
