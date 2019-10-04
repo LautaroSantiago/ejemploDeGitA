@@ -1,0 +1,52 @@
+int sortEmployees(Employee List[], int len, int order)///ordena alfabeticamentica y por sector
+{
+    Employee aux;
+    int i;
+    int j;
+    int returno = -1;
+
+    for(i = 0; i < len -1; i++)
+    {
+        for(j = i + 1; j < len; j++)
+        {
+            if(order == DOWN && strcmp(List[i].lastName, List[j].lastName) > 0)
+            {
+
+                    aux = List[i];
+                    List[i] = List[j];
+                    List[j] = aux;
+            }
+
+            if(order == UPP && strcmp(List[i].lastName, List[j].lastName) < 0)
+            {
+                    aux = List[i];
+                    List[i] = List[j];
+                    List[j] = aux;
+
+            }
+            if(order == UPP && strcmp(List[i].lastName, List[j].lastName) == 0)
+            {
+                if(List[i].sector > List[j].sector)
+                {
+                    aux = List[i];
+                    List[i] = List[j];
+                    List[j] = aux;
+                }
+            }
+
+            if(order == DOWN && strcmp(List[i].lastName, List[j].lastName) == 0)
+            {
+                if(List[i].sector < List[j].sector)
+                {
+                    aux = List[i];
+                    List[i] = List[j];
+                    List[j] = aux;
+                }
+            }
+
+            returno = 0;
+        }
+    }
+
+    return returno;
+}
