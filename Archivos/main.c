@@ -6,7 +6,7 @@ usarlo
 cerrarlo
 */
 
-typedef
+///typedef
 int main()
 {
     FILE* pArchivo;
@@ -101,7 +101,11 @@ int main()
 
         fclose(pArchivo);
     }*/
-    ///ESCRIBIR
+
+
+/// /// /// ///
+
+/*    ///ESCRIBIR
     int vector[5] = {1,2,3,4};
     int i;
 
@@ -112,7 +116,7 @@ int main()
     }
     return 0;
 
-
+*/
     /***
     TP 3: mockaroo genera datos
 
